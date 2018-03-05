@@ -1,3 +1,8 @@
+var socket = io();
+socket.on("event", function(msg) {
+  console.log(msg);
+});
+
 const c = document.getElementById("myCanvas");
 const ctx = c.getContext("2d");
 const width = c.clientWidth;
