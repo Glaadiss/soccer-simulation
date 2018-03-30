@@ -9,7 +9,10 @@
 #include "MovableObject.h"
 
 class Ball : public MovableObject{
-
+    using MovableObject::MovableObject;
+public:
+    Ball(int i, double d, double d1);
+    void move();
 };
 
 

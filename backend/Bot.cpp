@@ -10,9 +10,9 @@ Bot::Bot(int i, double d, double d1) : MovableObject(i, d, d1) {
 }
 
 
-void Bot::move(){
-    double ballX = 50;
-    double ballY = 50;
+void Bot::move(Ball &ball){
+    double ballX = ball.getX();
+    double ballY = ball.getY();
     double diffX = ballX - x;
     double diffY = ballY - y;
     double distance = sqrt(diffX*diffX + diffY*diffY);

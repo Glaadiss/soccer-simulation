@@ -5,7 +5,7 @@
 
 int main() {
     Playground playground;
-    unsigned int microseconds = 16000;
+    unsigned int microseconds = 32000;
     while(true){
         usleep(microseconds);
         playground.play();

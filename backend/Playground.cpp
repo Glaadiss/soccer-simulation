@@ -7,12 +7,14 @@
 Playground::Playground() {
     blueTeam = new Team(true);
     redTeam = new Team(false);
+    ball = new Ball(23, 50, 70);
 }
 
 void Playground::play() {
-    blueTeam->moveAll();
-    redTeam->moveAll();
+    blueTeam->moveAll(*ball);
+    redTeam->moveAll(*ball);
+    std::cout << "{";
     blueTeam->displayPlayers();
-    blueTeam->displayPlayers();
-    std::cout << std::flush;
+    redTeam->displayPlayers();
+    std::cout << ball->getPosition() << "}" << std::flush;
 }

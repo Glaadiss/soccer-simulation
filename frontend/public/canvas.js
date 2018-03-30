@@ -1,26 +1,31 @@
 var socket = io();
-socket.on("event", function(msg) {
-  // eraseField();
-  // writeGame();
+socket.on("data", function(json) {
+  eraseField();
+  writeGame(json);
 });
 
 const c = document.getElementById("myCanvas");
 const ctx = c.getContext("2d");
 const width = c.clientWidth;
+const scaleX = width / 100;
 const height = c.clientHeight;
+const scaleY = height / 100;
 ctx.lineWidth = 2;
 
-writeGame();
+// writeGame();
 
-function writeGame() {
+function writeGame(json) {
   writePitch();
   for (let i = 0; i < 11; i++) {
-    writePlayer(...randomizeLocation(), "red");
+    const { x, y } = json[i + 1];
+    writePlayer(x * scaleX, y * scaleY, "red");
   }
   for (let i = 0; i < 11; i++) {
-    writePlayer(...randomizeLocation(), "blue");
+    const { x, y } = json[i + 11];
+    writePlayer(x * scaleX, y * scaleY, "blue");
   }
-  writeBall(...randomizeLocation());
+  const { x, y } = json[23];
+  writeBall(x * scaleX, y * scaleY);
 }
 
 function eraseField() {

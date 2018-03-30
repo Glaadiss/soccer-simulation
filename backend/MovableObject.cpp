@@ -15,8 +15,22 @@ std::string MovableObject::getPosition() {
     auto strY = std::to_string(y);
     auto strId = std::to_string(id);
     std::stringstream result;
-    result << "{x: " << strX << ", y:" << strY << ", id: " << strId << "}";
+    result << "\"" << strId << "\"" <<":{\"x\":" << strX << ",\"y\":" << strY << "}";
     return result.str();
+}
+
+double MovableObject::getX(){
+    return x;
+}
+
+double MovableObject::getY(){
+    return y;
+}
+
+bool MovableObject::isCollision(MovableObject &other){
+    bool nearX = abs(other.getX() - x) < radius;
+    bool nearY = abs(other.getY() - y) < radius;
+    return nearX && nearY;
 }
 
 void MovableObject::move(double dx, double dy){

@@ -6,6 +6,7 @@
 #define BACKEND_MOVABLEOBJECT_H
 #include <sstream>
 #include "string"
+#include <math.h>
 
 class MovableObject {
     int id;
@@ -18,7 +19,10 @@ protected:
 public:
     explicit MovableObject(int, double, double);
     std::string getPosition();
+    double getX();
+    double getY();
     void move(double dx, double dy);
+    bool isCollision(MovableObject &other);
 };
 
 

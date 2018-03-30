@@ -9,6 +9,7 @@
 #include "Bot.h"
 #include "RealPlayer.h"
 #include "iostream"
+#include "Ball.h"
 class Team {
     bool leftField;
     Bot *players[11];
@@ -17,7 +18,7 @@ public:
     Team(bool);
     Bot* locatePlayer(int id, double x, double y);
     void displayPlayers();
-    void moveAll();
+    void moveAll(Ball &ball);
 };
 
 

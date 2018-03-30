@@ -10,7 +10,8 @@ backend.stdout.on("error", data => {
 });
 
 backend.stdout.on("data", data => {
-  console.log(`${data}`);
+  const json = JSON.parse(data);
+  io.emit("data", json);
 });
 
 const port = process.env.PORT || 3000;
@@ -27,9 +28,9 @@ function onConnection(socket) {
   });
 }
 
-setInterval(() => {
-  io.emit("event", { event: "something event" });
-}, 500);
+// setInterval(() => {
+//   io.emit("event", { event: "something event" });
+// }, 500);
 
 io.on("connection", onConnection);
 

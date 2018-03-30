@@ -10,10 +10,11 @@
 #include "TimeTable.h"
 #include "Team.h"
 #include "Goal.h"
-
+#include "Ball.h"
 class Playground {
     PointsTable pointsTable;
     TimeTable timeTable;
+    Ball *ball;
     Team *redTeam;
     Team *blueTeam;
     Goal redGoal;

@@ -32,13 +32,13 @@ Team::Team(bool LeftField) {
 
 void Team::displayPlayers() {
     for (auto &&item : players) {
-        std::cout << item->getPosition() << std::endl;
+        std::cout << item->getPosition() << ",";
     }
 }
 
-void Team::moveAll() {
+void Team::moveAll(Ball &ball) {
     for (auto &&item : players) {
-        item->move();
+        item->move(ball);
     }
 }
 
