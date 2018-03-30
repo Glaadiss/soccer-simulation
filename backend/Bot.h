@@ -8,9 +8,14 @@
 
 #include "MovableObject.h"
 #include "Seesight.h"
+#include <math.h>
 
 class Bot : public MovableObject{
+    using MovableObject::MovableObject;
     Seesight seesight;
+public:
+    Bot(int i, double d, double d1);
+    void move();
 };
 
 

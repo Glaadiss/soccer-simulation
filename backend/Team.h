@@ -8,12 +8,16 @@
 
 #include "Bot.h"
 #include "RealPlayer.h"
-
+#include "iostream"
 class Team {
-    Bot players[11];
-    RealPlayer realPlayer;
+    bool leftField;
+    Bot *players[11];
+    RealPlayer *realPlayer;
 public:
     Team(bool);
+    Bot* locatePlayer(int id, double x, double y);
+    void displayPlayers();
+    void moveAll();
 };
 
 

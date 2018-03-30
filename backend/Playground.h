@@ -14,10 +14,13 @@
 class Playground {
     PointsTable pointsTable;
     TimeTable timeTable;
-    Team redTeam;
-    Team blueTeam;
-    Goal readGoal;
+    Team *redTeam;
+    Team *blueTeam;
+    Goal redGoal;
     Goal blueGoal;
+public:
+    Playground();
+    void play();
 };
 
 

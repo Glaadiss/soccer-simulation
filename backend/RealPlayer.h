@@ -9,7 +9,7 @@
 #include "MovableObject.h"
 
 class RealPlayer : public MovableObject {
-
+    using MovableObject::MovableObject;
 };
 
 

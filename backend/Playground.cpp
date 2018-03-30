@@ -3,3 +3,16 @@
 //
 
 #include "Playground.h"
+
+Playground::Playground() {
+    blueTeam = new Team(true);
+    redTeam = new Team(false);
+}
+
+void Playground::play() {
+    blueTeam->moveAll();
+    redTeam->moveAll();
+    blueTeam->displayPlayers();
+    blueTeam->displayPlayers();
+    std::cout << std::flush;
+}

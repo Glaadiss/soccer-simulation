@@ -9,3 +9,17 @@ MovableObject::MovableObject(int ID, double X, double Y) {
     x = X;
     y = Y;
 }
+
+std::string MovableObject::getPosition() {
+    auto strX = std::to_string(x);
+    auto strY = std::to_string(y);
+    auto strId = std::to_string(id);
+    std::stringstream result;
+    result << "{x: " << strX << ", y:" << strY << ", id: " << strId << "}";
+    return result.str();
+}
+
+void MovableObject::move(double dx, double dy){
+    x+=dx;
+    y+=dy;
+}

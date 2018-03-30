@@ -2,6 +2,17 @@ const express = require("express");
 const app = express();
 const http = require("http").Server(app);
 const io = require("socket.io")(http);
+const { spawn, exec } = require("child_process");
+const backend = spawn("./../backend/cmake-build-debug/backend");
+
+backend.stdout.on("error", data => {
+  console.log(`error: ${data}`);
+});
+
+backend.stdout.on("data", data => {
+  console.log(`${data}`);
+});
+
 const port = process.env.PORT || 3000;
 
 app.use(express.static(__dirname + "/public"));

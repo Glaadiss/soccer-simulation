@@ -4,17 +4,21 @@
 
 #ifndef BACKEND_MOVABLEOBJECT_H
 #define BACKEND_MOVABLEOBJECT_H
-
+#include <sstream>
+#include "string"
 
 class MovableObject {
     int id;
-    double x;
-    double y;
+
+protected:
     int radius;
     double velocity;
-
+    double x;
+    double y;
 public:
-    MovableObject(int, double, double);
+    explicit MovableObject(int, double, double);
+    std::string getPosition();
+    void move(double dx, double dy);
 };
 
 
