@@ -1,6 +1,6 @@
 #include <iostream>
+#include "Playground.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    Playground playground;
 }

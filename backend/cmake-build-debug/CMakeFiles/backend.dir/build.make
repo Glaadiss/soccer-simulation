@@ -81,17 +81,277 @@ CMakeFiles/backend.dir/main.cpp.o.provides: CMakeFiles/backend.dir/main.cpp.o.re
 CMakeFiles/backend.dir/main.cpp.o.provides.build: CMakeFiles/backend.dir/main.cpp.o
 
 
+CMakeFiles/backend.dir/Playground.cpp.o: CMakeFiles/backend.dir/flags.make
+CMakeFiles/backend.dir/Playground.cpp.o: ../Playground.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/backend.dir/Playground.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/backend.dir/Playground.cpp.o -c /Users/gladis/CLionProjects/soccer-simulation/backend/Playground.cpp
+
+CMakeFiles/backend.dir/Playground.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/backend.dir/Playground.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gladis/CLionProjects/soccer-simulation/backend/Playground.cpp > CMakeFiles/backend.dir/Playground.cpp.i
+
+CMakeFiles/backend.dir/Playground.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/backend.dir/Playground.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gladis/CLionProjects/soccer-simulation/backend/Playground.cpp -o CMakeFiles/backend.dir/Playground.cpp.s
+
+CMakeFiles/backend.dir/Playground.cpp.o.requires:
+
+.PHONY : CMakeFiles/backend.dir/Playground.cpp.o.requires
+
+CMakeFiles/backend.dir/Playground.cpp.o.provides: CMakeFiles/backend.dir/Playground.cpp.o.requires
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Playground.cpp.o.provides.build
+.PHONY : CMakeFiles/backend.dir/Playground.cpp.o.provides
+
+CMakeFiles/backend.dir/Playground.cpp.o.provides.build: CMakeFiles/backend.dir/Playground.cpp.o
+
+
+CMakeFiles/backend.dir/MovableObject.cpp.o: CMakeFiles/backend.dir/flags.make
+CMakeFiles/backend.dir/MovableObject.cpp.o: ../MovableObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/backend.dir/MovableObject.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/backend.dir/MovableObject.cpp.o -c /Users/gladis/CLionProjects/soccer-simulation/backend/MovableObject.cpp
+
+CMakeFiles/backend.dir/MovableObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/backend.dir/MovableObject.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gladis/CLionProjects/soccer-simulation/backend/MovableObject.cpp > CMakeFiles/backend.dir/MovableObject.cpp.i
+
+CMakeFiles/backend.dir/MovableObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/backend.dir/MovableObject.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gladis/CLionProjects/soccer-simulation/backend/MovableObject.cpp -o CMakeFiles/backend.dir/MovableObject.cpp.s
+
+CMakeFiles/backend.dir/MovableObject.cpp.o.requires:
+
+.PHONY : CMakeFiles/backend.dir/MovableObject.cpp.o.requires
+
+CMakeFiles/backend.dir/MovableObject.cpp.o.provides: CMakeFiles/backend.dir/MovableObject.cpp.o.requires
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/MovableObject.cpp.o.provides.build
+.PHONY : CMakeFiles/backend.dir/MovableObject.cpp.o.provides
+
+CMakeFiles/backend.dir/MovableObject.cpp.o.provides.build: CMakeFiles/backend.dir/MovableObject.cpp.o
+
+
+CMakeFiles/backend.dir/Ball.cpp.o: CMakeFiles/backend.dir/flags.make
+CMakeFiles/backend.dir/Ball.cpp.o: ../Ball.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/backend.dir/Ball.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/backend.dir/Ball.cpp.o -c /Users/gladis/CLionProjects/soccer-simulation/backend/Ball.cpp
+
+CMakeFiles/backend.dir/Ball.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/backend.dir/Ball.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gladis/CLionProjects/soccer-simulation/backend/Ball.cpp > CMakeFiles/backend.dir/Ball.cpp.i
+
+CMakeFiles/backend.dir/Ball.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/backend.dir/Ball.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gladis/CLionProjects/soccer-simulation/backend/Ball.cpp -o CMakeFiles/backend.dir/Ball.cpp.s
+
+CMakeFiles/backend.dir/Ball.cpp.o.requires:
+
+.PHONY : CMakeFiles/backend.dir/Ball.cpp.o.requires
+
+CMakeFiles/backend.dir/Ball.cpp.o.provides: CMakeFiles/backend.dir/Ball.cpp.o.requires
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Ball.cpp.o.provides.build
+.PHONY : CMakeFiles/backend.dir/Ball.cpp.o.provides
+
+CMakeFiles/backend.dir/Ball.cpp.o.provides.build: CMakeFiles/backend.dir/Ball.cpp.o
+
+
+CMakeFiles/backend.dir/Goal.cpp.o: CMakeFiles/backend.dir/flags.make
+CMakeFiles/backend.dir/Goal.cpp.o: ../Goal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/backend.dir/Goal.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/backend.dir/Goal.cpp.o -c /Users/gladis/CLionProjects/soccer-simulation/backend/Goal.cpp
+
+CMakeFiles/backend.dir/Goal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/backend.dir/Goal.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gladis/CLionProjects/soccer-simulation/backend/Goal.cpp > CMakeFiles/backend.dir/Goal.cpp.i
+
+CMakeFiles/backend.dir/Goal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/backend.dir/Goal.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gladis/CLionProjects/soccer-simulation/backend/Goal.cpp -o CMakeFiles/backend.dir/Goal.cpp.s
+
+CMakeFiles/backend.dir/Goal.cpp.o.requires:
+
+.PHONY : CMakeFiles/backend.dir/Goal.cpp.o.requires
+
+CMakeFiles/backend.dir/Goal.cpp.o.provides: CMakeFiles/backend.dir/Goal.cpp.o.requires
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Goal.cpp.o.provides.build
+.PHONY : CMakeFiles/backend.dir/Goal.cpp.o.provides
+
+CMakeFiles/backend.dir/Goal.cpp.o.provides.build: CMakeFiles/backend.dir/Goal.cpp.o
+
+
+CMakeFiles/backend.dir/Team.cpp.o: CMakeFiles/backend.dir/flags.make
+CMakeFiles/backend.dir/Team.cpp.o: ../Team.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/backend.dir/Team.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/backend.dir/Team.cpp.o -c /Users/gladis/CLionProjects/soccer-simulation/backend/Team.cpp
+
+CMakeFiles/backend.dir/Team.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/backend.dir/Team.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gladis/CLionProjects/soccer-simulation/backend/Team.cpp > CMakeFiles/backend.dir/Team.cpp.i
+
+CMakeFiles/backend.dir/Team.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/backend.dir/Team.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gladis/CLionProjects/soccer-simulation/backend/Team.cpp -o CMakeFiles/backend.dir/Team.cpp.s
+
+CMakeFiles/backend.dir/Team.cpp.o.requires:
+
+.PHONY : CMakeFiles/backend.dir/Team.cpp.o.requires
+
+CMakeFiles/backend.dir/Team.cpp.o.provides: CMakeFiles/backend.dir/Team.cpp.o.requires
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Team.cpp.o.provides.build
+.PHONY : CMakeFiles/backend.dir/Team.cpp.o.provides
+
+CMakeFiles/backend.dir/Team.cpp.o.provides.build: CMakeFiles/backend.dir/Team.cpp.o
+
+
+CMakeFiles/backend.dir/TimeTable.cpp.o: CMakeFiles/backend.dir/flags.make
+CMakeFiles/backend.dir/TimeTable.cpp.o: ../TimeTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/backend.dir/TimeTable.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/backend.dir/TimeTable.cpp.o -c /Users/gladis/CLionProjects/soccer-simulation/backend/TimeTable.cpp
+
+CMakeFiles/backend.dir/TimeTable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/backend.dir/TimeTable.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gladis/CLionProjects/soccer-simulation/backend/TimeTable.cpp > CMakeFiles/backend.dir/TimeTable.cpp.i
+
+CMakeFiles/backend.dir/TimeTable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/backend.dir/TimeTable.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gladis/CLionProjects/soccer-simulation/backend/TimeTable.cpp -o CMakeFiles/backend.dir/TimeTable.cpp.s
+
+CMakeFiles/backend.dir/TimeTable.cpp.o.requires:
+
+.PHONY : CMakeFiles/backend.dir/TimeTable.cpp.o.requires
+
+CMakeFiles/backend.dir/TimeTable.cpp.o.provides: CMakeFiles/backend.dir/TimeTable.cpp.o.requires
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/TimeTable.cpp.o.provides.build
+.PHONY : CMakeFiles/backend.dir/TimeTable.cpp.o.provides
+
+CMakeFiles/backend.dir/TimeTable.cpp.o.provides.build: CMakeFiles/backend.dir/TimeTable.cpp.o
+
+
+CMakeFiles/backend.dir/PointsTable.cpp.o: CMakeFiles/backend.dir/flags.make
+CMakeFiles/backend.dir/PointsTable.cpp.o: ../PointsTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/backend.dir/PointsTable.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/backend.dir/PointsTable.cpp.o -c /Users/gladis/CLionProjects/soccer-simulation/backend/PointsTable.cpp
+
+CMakeFiles/backend.dir/PointsTable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/backend.dir/PointsTable.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gladis/CLionProjects/soccer-simulation/backend/PointsTable.cpp > CMakeFiles/backend.dir/PointsTable.cpp.i
+
+CMakeFiles/backend.dir/PointsTable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/backend.dir/PointsTable.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gladis/CLionProjects/soccer-simulation/backend/PointsTable.cpp -o CMakeFiles/backend.dir/PointsTable.cpp.s
+
+CMakeFiles/backend.dir/PointsTable.cpp.o.requires:
+
+.PHONY : CMakeFiles/backend.dir/PointsTable.cpp.o.requires
+
+CMakeFiles/backend.dir/PointsTable.cpp.o.provides: CMakeFiles/backend.dir/PointsTable.cpp.o.requires
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/PointsTable.cpp.o.provides.build
+.PHONY : CMakeFiles/backend.dir/PointsTable.cpp.o.provides
+
+CMakeFiles/backend.dir/PointsTable.cpp.o.provides.build: CMakeFiles/backend.dir/PointsTable.cpp.o
+
+
+CMakeFiles/backend.dir/Bot.cpp.o: CMakeFiles/backend.dir/flags.make
+CMakeFiles/backend.dir/Bot.cpp.o: ../Bot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/backend.dir/Bot.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/backend.dir/Bot.cpp.o -c /Users/gladis/CLionProjects/soccer-simulation/backend/Bot.cpp
+
+CMakeFiles/backend.dir/Bot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/backend.dir/Bot.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gladis/CLionProjects/soccer-simulation/backend/Bot.cpp > CMakeFiles/backend.dir/Bot.cpp.i
+
+CMakeFiles/backend.dir/Bot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/backend.dir/Bot.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gladis/CLionProjects/soccer-simulation/backend/Bot.cpp -o CMakeFiles/backend.dir/Bot.cpp.s
+
+CMakeFiles/backend.dir/Bot.cpp.o.requires:
+
+.PHONY : CMakeFiles/backend.dir/Bot.cpp.o.requires
+
+CMakeFiles/backend.dir/Bot.cpp.o.provides: CMakeFiles/backend.dir/Bot.cpp.o.requires
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Bot.cpp.o.provides.build
+.PHONY : CMakeFiles/backend.dir/Bot.cpp.o.provides
+
+CMakeFiles/backend.dir/Bot.cpp.o.provides.build: CMakeFiles/backend.dir/Bot.cpp.o
+
+
+CMakeFiles/backend.dir/RealPlayer.cpp.o: CMakeFiles/backend.dir/flags.make
+CMakeFiles/backend.dir/RealPlayer.cpp.o: ../RealPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/backend.dir/RealPlayer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/backend.dir/RealPlayer.cpp.o -c /Users/gladis/CLionProjects/soccer-simulation/backend/RealPlayer.cpp
+
+CMakeFiles/backend.dir/RealPlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/backend.dir/RealPlayer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gladis/CLionProjects/soccer-simulation/backend/RealPlayer.cpp > CMakeFiles/backend.dir/RealPlayer.cpp.i
+
+CMakeFiles/backend.dir/RealPlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/backend.dir/RealPlayer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gladis/CLionProjects/soccer-simulation/backend/RealPlayer.cpp -o CMakeFiles/backend.dir/RealPlayer.cpp.s
+
+CMakeFiles/backend.dir/RealPlayer.cpp.o.requires:
+
+.PHONY : CMakeFiles/backend.dir/RealPlayer.cpp.o.requires
+
+CMakeFiles/backend.dir/RealPlayer.cpp.o.provides: CMakeFiles/backend.dir/RealPlayer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/RealPlayer.cpp.o.provides.build
+.PHONY : CMakeFiles/backend.dir/RealPlayer.cpp.o.provides
+
+CMakeFiles/backend.dir/RealPlayer.cpp.o.provides.build: CMakeFiles/backend.dir/RealPlayer.cpp.o
+
+
+CMakeFiles/backend.dir/Seesight.cpp.o: CMakeFiles/backend.dir/flags.make
+CMakeFiles/backend.dir/Seesight.cpp.o: ../Seesight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/backend.dir/Seesight.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/backend.dir/Seesight.cpp.o -c /Users/gladis/CLionProjects/soccer-simulation/backend/Seesight.cpp
+
+CMakeFiles/backend.dir/Seesight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/backend.dir/Seesight.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gladis/CLionProjects/soccer-simulation/backend/Seesight.cpp > CMakeFiles/backend.dir/Seesight.cpp.i
+
+CMakeFiles/backend.dir/Seesight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/backend.dir/Seesight.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gladis/CLionProjects/soccer-simulation/backend/Seesight.cpp -o CMakeFiles/backend.dir/Seesight.cpp.s
+
+CMakeFiles/backend.dir/Seesight.cpp.o.requires:
+
+.PHONY : CMakeFiles/backend.dir/Seesight.cpp.o.requires
+
+CMakeFiles/backend.dir/Seesight.cpp.o.provides: CMakeFiles/backend.dir/Seesight.cpp.o.requires
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Seesight.cpp.o.provides.build
+.PHONY : CMakeFiles/backend.dir/Seesight.cpp.o.provides
+
+CMakeFiles/backend.dir/Seesight.cpp.o.provides.build: CMakeFiles/backend.dir/Seesight.cpp.o
+
+
 # Object files for target backend
 backend_OBJECTS = \
-"CMakeFiles/backend.dir/main.cpp.o"
+"CMakeFiles/backend.dir/main.cpp.o" \
+"CMakeFiles/backend.dir/Playground.cpp.o" \
+"CMakeFiles/backend.dir/MovableObject.cpp.o" \
+"CMakeFiles/backend.dir/Ball.cpp.o" \
+"CMakeFiles/backend.dir/Goal.cpp.o" \
+"CMakeFiles/backend.dir/Team.cpp.o" \
+"CMakeFiles/backend.dir/TimeTable.cpp.o" \
+"CMakeFiles/backend.dir/PointsTable.cpp.o" \
+"CMakeFiles/backend.dir/Bot.cpp.o" \
+"CMakeFiles/backend.dir/RealPlayer.cpp.o" \
+"CMakeFiles/backend.dir/Seesight.cpp.o"
 
 # External object files for target backend
 backend_EXTERNAL_OBJECTS =
 
 backend: CMakeFiles/backend.dir/main.cpp.o
+backend: CMakeFiles/backend.dir/Playground.cpp.o
+backend: CMakeFiles/backend.dir/MovableObject.cpp.o
+backend: CMakeFiles/backend.dir/Ball.cpp.o
+backend: CMakeFiles/backend.dir/Goal.cpp.o
+backend: CMakeFiles/backend.dir/Team.cpp.o
+backend: CMakeFiles/backend.dir/TimeTable.cpp.o
+backend: CMakeFiles/backend.dir/PointsTable.cpp.o
+backend: CMakeFiles/backend.dir/Bot.cpp.o
+backend: CMakeFiles/backend.dir/RealPlayer.cpp.o
+backend: CMakeFiles/backend.dir/Seesight.cpp.o
 backend: CMakeFiles/backend.dir/build.make
 backend: CMakeFiles/backend.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable backend"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable backend"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/backend.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -100,6 +360,16 @@ CMakeFiles/backend.dir/build: backend
 .PHONY : CMakeFiles/backend.dir/build
 
 CMakeFiles/backend.dir/requires: CMakeFiles/backend.dir/main.cpp.o.requires
+CMakeFiles/backend.dir/requires: CMakeFiles/backend.dir/Playground.cpp.o.requires
+CMakeFiles/backend.dir/requires: CMakeFiles/backend.dir/MovableObject.cpp.o.requires
+CMakeFiles/backend.dir/requires: CMakeFiles/backend.dir/Ball.cpp.o.requires
+CMakeFiles/backend.dir/requires: CMakeFiles/backend.dir/Goal.cpp.o.requires
+CMakeFiles/backend.dir/requires: CMakeFiles/backend.dir/Team.cpp.o.requires
+CMakeFiles/backend.dir/requires: CMakeFiles/backend.dir/TimeTable.cpp.o.requires
+CMakeFiles/backend.dir/requires: CMakeFiles/backend.dir/PointsTable.cpp.o.requires
+CMakeFiles/backend.dir/requires: CMakeFiles/backend.dir/Bot.cpp.o.requires
+CMakeFiles/backend.dir/requires: CMakeFiles/backend.dir/RealPlayer.cpp.o.requires
+CMakeFiles/backend.dir/requires: CMakeFiles/backend.dir/Seesight.cpp.o.requires
 
 .PHONY : CMakeFiles/backend.dir/requires
 

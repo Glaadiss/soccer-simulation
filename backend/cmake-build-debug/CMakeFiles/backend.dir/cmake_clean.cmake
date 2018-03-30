@@ -1,5 +1,15 @@
 file(REMOVE_RECURSE
   "CMakeFiles/backend.dir/main.cpp.o"
+  "CMakeFiles/backend.dir/Playground.cpp.o"
+  "CMakeFiles/backend.dir/MovableObject.cpp.o"
+  "CMakeFiles/backend.dir/Ball.cpp.o"
+  "CMakeFiles/backend.dir/Goal.cpp.o"
+  "CMakeFiles/backend.dir/Team.cpp.o"
+  "CMakeFiles/backend.dir/TimeTable.cpp.o"
+  "CMakeFiles/backend.dir/PointsTable.cpp.o"
+  "CMakeFiles/backend.dir/Bot.cpp.o"
+  "CMakeFiles/backend.dir/RealPlayer.cpp.o"
+  "CMakeFiles/backend.dir/Seesight.cpp.o"
   "backend.pdb"
   "backend"
 )

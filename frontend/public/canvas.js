@@ -1,6 +1,7 @@
 var socket = io();
 socket.on("event", function(msg) {
-  console.log(msg);
+  // eraseField();
+  // writeGame();
 });
 
 const c = document.getElementById("myCanvas");
@@ -9,14 +10,22 @@ const width = c.clientWidth;
 const height = c.clientHeight;
 ctx.lineWidth = 2;
 
-writePitch();
-for (let i = 0; i < 11; i++) {
-  writePlayer(...randomizeLocation(), "red");
+writeGame();
+
+function writeGame() {
+  writePitch();
+  for (let i = 0; i < 11; i++) {
+    writePlayer(...randomizeLocation(), "red");
+  }
+  for (let i = 0; i < 11; i++) {
+    writePlayer(...randomizeLocation(), "blue");
+  }
+  writeBall(...randomizeLocation());
 }
-for (let i = 0; i < 11; i++) {
-  writePlayer(...randomizeLocation(), "blue");
+
+function eraseField() {
+  ctx.clearRect(0, 0, width, height);
 }
-writeBall(...randomizeLocation());
 
 function writeBall(x, y) {
   ctx.strokeStyle = "black";

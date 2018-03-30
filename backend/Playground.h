@@ -1,0 +1,24 @@
+//
+// Created by Bartłomiej Gładys on 30.03.2018.
+//
+
+#ifndef BACKEND_PLAYGROUND_H
+#define BACKEND_PLAYGROUND_H
+
+
+#include "PointsTable.h"
+#include "TimeTable.h"
+#include "Team.h"
+#include "Goal.h"
+
+class Playground {
+    PointsTable pointsTable;
+    TimeTable timeTable;
+    Team redTeam;
+    Team blueTeam;
+    Goal readGoal;
+    Goal blueGoal;
+};
+
+
+#endif //BACKEND_PLAYGROUND_H

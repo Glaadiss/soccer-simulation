@@ -123,6 +123,276 @@ backend/fast:
 	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/build
 .PHONY : backend/fast
 
+Ball.o: Ball.cpp.o
+
+.PHONY : Ball.o
+
+# target to build an object file
+Ball.cpp.o:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Ball.cpp.o
+.PHONY : Ball.cpp.o
+
+Ball.i: Ball.cpp.i
+
+.PHONY : Ball.i
+
+# target to preprocess a source file
+Ball.cpp.i:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Ball.cpp.i
+.PHONY : Ball.cpp.i
+
+Ball.s: Ball.cpp.s
+
+.PHONY : Ball.s
+
+# target to generate assembly for a file
+Ball.cpp.s:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Ball.cpp.s
+.PHONY : Ball.cpp.s
+
+Bot.o: Bot.cpp.o
+
+.PHONY : Bot.o
+
+# target to build an object file
+Bot.cpp.o:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Bot.cpp.o
+.PHONY : Bot.cpp.o
+
+Bot.i: Bot.cpp.i
+
+.PHONY : Bot.i
+
+# target to preprocess a source file
+Bot.cpp.i:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Bot.cpp.i
+.PHONY : Bot.cpp.i
+
+Bot.s: Bot.cpp.s
+
+.PHONY : Bot.s
+
+# target to generate assembly for a file
+Bot.cpp.s:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Bot.cpp.s
+.PHONY : Bot.cpp.s
+
+Goal.o: Goal.cpp.o
+
+.PHONY : Goal.o
+
+# target to build an object file
+Goal.cpp.o:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Goal.cpp.o
+.PHONY : Goal.cpp.o
+
+Goal.i: Goal.cpp.i
+
+.PHONY : Goal.i
+
+# target to preprocess a source file
+Goal.cpp.i:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Goal.cpp.i
+.PHONY : Goal.cpp.i
+
+Goal.s: Goal.cpp.s
+
+.PHONY : Goal.s
+
+# target to generate assembly for a file
+Goal.cpp.s:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Goal.cpp.s
+.PHONY : Goal.cpp.s
+
+MovableObject.o: MovableObject.cpp.o
+
+.PHONY : MovableObject.o
+
+# target to build an object file
+MovableObject.cpp.o:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/MovableObject.cpp.o
+.PHONY : MovableObject.cpp.o
+
+MovableObject.i: MovableObject.cpp.i
+
+.PHONY : MovableObject.i
+
+# target to preprocess a source file
+MovableObject.cpp.i:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/MovableObject.cpp.i
+.PHONY : MovableObject.cpp.i
+
+MovableObject.s: MovableObject.cpp.s
+
+.PHONY : MovableObject.s
+
+# target to generate assembly for a file
+MovableObject.cpp.s:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/MovableObject.cpp.s
+.PHONY : MovableObject.cpp.s
+
+Playground.o: Playground.cpp.o
+
+.PHONY : Playground.o
+
+# target to build an object file
+Playground.cpp.o:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Playground.cpp.o
+.PHONY : Playground.cpp.o
+
+Playground.i: Playground.cpp.i
+
+.PHONY : Playground.i
+
+# target to preprocess a source file
+Playground.cpp.i:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Playground.cpp.i
+.PHONY : Playground.cpp.i
+
+Playground.s: Playground.cpp.s
+
+.PHONY : Playground.s
+
+# target to generate assembly for a file
+Playground.cpp.s:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Playground.cpp.s
+.PHONY : Playground.cpp.s
+
+PointsTable.o: PointsTable.cpp.o
+
+.PHONY : PointsTable.o
+
+# target to build an object file
+PointsTable.cpp.o:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/PointsTable.cpp.o
+.PHONY : PointsTable.cpp.o
+
+PointsTable.i: PointsTable.cpp.i
+
+.PHONY : PointsTable.i
+
+# target to preprocess a source file
+PointsTable.cpp.i:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/PointsTable.cpp.i
+.PHONY : PointsTable.cpp.i
+
+PointsTable.s: PointsTable.cpp.s
+
+.PHONY : PointsTable.s
+
+# target to generate assembly for a file
+PointsTable.cpp.s:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/PointsTable.cpp.s
+.PHONY : PointsTable.cpp.s
+
+RealPlayer.o: RealPlayer.cpp.o
+
+.PHONY : RealPlayer.o
+
+# target to build an object file
+RealPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/RealPlayer.cpp.o
+.PHONY : RealPlayer.cpp.o
+
+RealPlayer.i: RealPlayer.cpp.i
+
+.PHONY : RealPlayer.i
+
+# target to preprocess a source file
+RealPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/RealPlayer.cpp.i
+.PHONY : RealPlayer.cpp.i
+
+RealPlayer.s: RealPlayer.cpp.s
+
+.PHONY : RealPlayer.s
+
+# target to generate assembly for a file
+RealPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/RealPlayer.cpp.s
+.PHONY : RealPlayer.cpp.s
+
+Seesight.o: Seesight.cpp.o
+
+.PHONY : Seesight.o
+
+# target to build an object file
+Seesight.cpp.o:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Seesight.cpp.o
+.PHONY : Seesight.cpp.o
+
+Seesight.i: Seesight.cpp.i
+
+.PHONY : Seesight.i
+
+# target to preprocess a source file
+Seesight.cpp.i:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Seesight.cpp.i
+.PHONY : Seesight.cpp.i
+
+Seesight.s: Seesight.cpp.s
+
+.PHONY : Seesight.s
+
+# target to generate assembly for a file
+Seesight.cpp.s:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Seesight.cpp.s
+.PHONY : Seesight.cpp.s
+
+Team.o: Team.cpp.o
+
+.PHONY : Team.o
+
+# target to build an object file
+Team.cpp.o:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Team.cpp.o
+.PHONY : Team.cpp.o
+
+Team.i: Team.cpp.i
+
+.PHONY : Team.i
+
+# target to preprocess a source file
+Team.cpp.i:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Team.cpp.i
+.PHONY : Team.cpp.i
+
+Team.s: Team.cpp.s
+
+.PHONY : Team.s
+
+# target to generate assembly for a file
+Team.cpp.s:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Team.cpp.s
+.PHONY : Team.cpp.s
+
+TimeTable.o: TimeTable.cpp.o
+
+.PHONY : TimeTable.o
+
+# target to build an object file
+TimeTable.cpp.o:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/TimeTable.cpp.o
+.PHONY : TimeTable.cpp.o
+
+TimeTable.i: TimeTable.cpp.i
+
+.PHONY : TimeTable.i
+
+# target to preprocess a source file
+TimeTable.cpp.i:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/TimeTable.cpp.i
+.PHONY : TimeTable.cpp.i
+
+TimeTable.s: TimeTable.cpp.s
+
+.PHONY : TimeTable.s
+
+# target to generate assembly for a file
+TimeTable.cpp.s:
+	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/TimeTable.cpp.s
+.PHONY : TimeTable.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +429,36 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... backend"
+	@echo "... Ball.o"
+	@echo "... Ball.i"
+	@echo "... Ball.s"
+	@echo "... Bot.o"
+	@echo "... Bot.i"
+	@echo "... Bot.s"
+	@echo "... Goal.o"
+	@echo "... Goal.i"
+	@echo "... Goal.s"
+	@echo "... MovableObject.o"
+	@echo "... MovableObject.i"
+	@echo "... MovableObject.s"
+	@echo "... Playground.o"
+	@echo "... Playground.i"
+	@echo "... Playground.s"
+	@echo "... PointsTable.o"
+	@echo "... PointsTable.i"
+	@echo "... PointsTable.s"
+	@echo "... RealPlayer.o"
+	@echo "... RealPlayer.i"
+	@echo "... RealPlayer.s"
+	@echo "... Seesight.o"
+	@echo "... Seesight.i"
+	@echo "... Seesight.s"
+	@echo "... Team.o"
+	@echo "... Team.i"
+	@echo "... Team.s"
+	@echo "... TimeTable.o"
+	@echo "... TimeTable.i"
+	@echo "... TimeTable.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
