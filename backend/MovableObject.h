@@ -15,6 +15,8 @@ protected:
     double velocity;
     double x;
     double y;
+    double origX;
+    double origY;
     int id;
     double dx;
 protected:
@@ -26,8 +28,10 @@ public:
     double getDx() const;
     double getDy() const;
     std::string getPosition();
-    double getX();
-    double getY();
+    double getX() const;
+    double getY() const;
+    double getOrigX();
+    double getOrigY();
     void move(double dx, double dy);
     bool isCollision(MovableObject &other);
     static double fRand(double fMin, double fMax);

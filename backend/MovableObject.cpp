@@ -8,6 +8,8 @@ MovableObject::MovableObject(int ID, double X, double Y) {
     id = ID;
     x = X;
     y = Y;
+    origX = X;
+    origY = Y;
 }
 
 std::string MovableObject::getPosition() {
@@ -19,12 +21,20 @@ std::string MovableObject::getPosition() {
     return result.str();
 }
 
-double MovableObject::getX(){
+double MovableObject::getX() const{
     return x;
 }
 
-double MovableObject::getY(){
+double MovableObject::getY() const{
     return y;
+}
+
+double MovableObject::getOrigX(){
+    return origX;
+}
+
+double MovableObject::getOrigY(){
+    return origY;
 }
 
 double MovableObject::getDistance(MovableObject &other){

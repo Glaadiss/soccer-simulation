@@ -12,8 +12,9 @@
 class Ball : public MovableObject{
     using MovableObject::MovableObject;
 public:
+    int kickedById;
     Ball(int i, double d, double d1);
-    void kick(double x, double y);
+    void kick(double x, double y, int id);
     void move();
     void moveWithPlayer(MovableObject *bot);
 };

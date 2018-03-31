@@ -18,11 +18,11 @@ function writeGame(json) {
   writePitch();
   for (let i = 0; i < 11; i++) {
     const { x, y } = json[i + 1];
-    writePlayer(x * scaleX, y * scaleY, "red");
+    writePlayer(x * scaleX, y * scaleY, "red", i + 1);
   }
   for (let i = 0; i < 11; i++) {
-    const { x, y } = json[i + 11];
-    writePlayer(x * scaleX, y * scaleY, "blue");
+    const { x, y } = json[i + 12];
+    writePlayer(x * scaleX, y * scaleY, "blue", i + 1);
   }
   const { x, y } = json[23];
   writeBall(x * scaleX, y * scaleY);
@@ -33,21 +33,31 @@ function eraseField() {
 }
 
 function writeBall(x, y) {
-  ctx.fillStyle = "white";
   ctx.beginPath();
+  ctx.strokeStyle = "#33aa33";
+  ctx.fillStyle = "white";
   ctx.arc(x, y, 10, 0, 2 * Math.PI);
   ctx.fill();
+  ctx.closePath();
 }
 
 function randomizeLocation() {
   return [Math.random() * 1500 + 50, Math.random() * 800 + 50];
 }
-function writePlayer(x, y, fill) {
-  ctx.strokeStyle = "red";
+function writePlayer(x, y, fill, id) {
   ctx.fillStyle = fill;
   ctx.beginPath();
   ctx.arc(x, y, 20, 0, 2 * Math.PI);
   ctx.fill();
+  ctx.font = "12px Arial";
+  ctx.fillStyle = "yellow";
+  ctx.fillText(
+    `${id}:(${Math.round(x / scaleX)}, ${Math.round(y / scaleY)})`,
+    x,
+    y
+  );
+
+  ctx.closePath();
   // ctx.strokeStyle = "yellow";
   // const sightRadius = 40;
   // const angle = Math.random() * 360;
@@ -65,6 +75,7 @@ const angle = Math.random() * 360;
 const secondAngle = angle > 180 ? angle - 60 : angle + 60;
 
 function writePitch() {
+  ctx.beginPath();
   ctx.strokeStyle = "white";
   writeLine(width / 2, 0, width / 2, height);
 
@@ -85,6 +96,7 @@ function writePitch() {
     width,
     height - 0.2 * height
   );
+  ctx.closePath();
 }
 
 function writeLine(srcX, srcY, destX, destY) {

@@ -12,11 +12,19 @@
 
 class Bot : public MovableObject{
     using MovableObject::MovableObject;
+    double maxX;
+    double maxY;
+public:
+    double getMaxX() const;
+
+    double getMaxY() const;
+
+private:
     Seesight seesight;
 public:
     Bot(int i, double d, double d1);
-    void move(Ball &ball, Bot bots[]);
-    void setDirection(Ball &ball, bool ballClosest);
+    void move(Ball &ball);
+    void setDirection(Ball &ball, bool ballClosest, Bot bot, bool teamHasBall);
 };
 
 

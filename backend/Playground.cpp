@@ -7,7 +7,7 @@
 Playground::Playground() {
     blueTeam = new Team(true);
     redTeam = new Team(false);
-    ball = new Ball(23, 50, 50);
+    ball = new Ball(23, 40, 40);
 }
 
 void Playground::play() {

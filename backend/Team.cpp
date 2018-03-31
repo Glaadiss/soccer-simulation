@@ -17,7 +17,7 @@ int indexofSmallestElement(double array[], int size)
 
 Bot* Team::locatePlayer(int idd, double xx, double y){
     double x = leftField ? xx : 100 - xx;
-    Bot *player = new Bot(leftField ? idd : idd + 10, x, y);
+    Bot *player = new Bot(leftField ? idd : idd + 11, x, y);
     return player;
 }
 
@@ -48,10 +48,26 @@ void Team::displayPlayers() {
 
 void Team::moveAll(Ball &ball) {
     Bot *closestPlayer= findBallClosest(ball);
+    Bot *botWithBall = getBotWithBall(ball);
+    Bot *randomBot = players[rand() % 11];
     for (auto &&player: players) {
-        player->setDirection(ball, player->getId() == closestPlayer->getId());
-        player->move(ball, *players);
+        player->setDirection(ball,
+                             player->getId() == closestPlayer->getId(),
+                             *randomBot,
+                             botWithBall != nullptr);
+        player->move(ball);
     }
+}
+
+
+Bot * Team::getBotWithBall(Ball &ball){
+    Bot * bot = nullptr;
+    int i =0;
+    while(i < 11 && bot == nullptr){
+        bot = players[i]->isCollision(ball) ? players[i] : nullptr;
+        ++i;
+    }
+    return bot;
 }
 
 Bot* Team::findBallClosest(Ball &ball){

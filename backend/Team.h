@@ -20,6 +20,7 @@ public:
     void displayPlayers();
     void moveAll(Ball &ball);
     Bot* findBallClosest(Ball &ball);
+    Bot* getBotWithBall(Ball &ball);
 };
 
 
