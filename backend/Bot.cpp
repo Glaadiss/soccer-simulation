@@ -6,7 +6,7 @@
 Bot::Bot(int i, double d, double d1) : MovableObject(i, d, d1) {
     maxX = MovableObject::fRand(10, 20);
     maxY = MovableObject::fRand(10, 20);
-    radius = 2;
+    radius = 1;
     velocity = MovableObject::fRand(0.2, 0.5);
 }
 
@@ -14,10 +14,10 @@ void Bot::setDirection(Ball &ball, bool ballClosest, Bot randomBot, bool teamHas
 
     if(isCollision(ball)){
         double choice = MovableObject::fRand(0, 1);
-        if(choice >= 0 && choice < 0.2 && id != randomBot.getId()){
+        if(choice >= 0 && choice < 0.4 && id != randomBot.getId()){
             ball.kick(randomBot.getX(),randomBot.getY(), randomBot.getId());
         }
-        else if(choice >= 0.8 && choice < 1){
+        else if(choice >= 0.4 && choice < 1){
             attack();
             ball.moveWithPlayer(this);
         }

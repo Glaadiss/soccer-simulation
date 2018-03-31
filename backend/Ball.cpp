@@ -21,6 +21,8 @@ void Ball::move(){
     if(y>100){
         dy = -abs(dy);
     }
+    dx*=0.98;
+    dy*=0.98;
     MovableObject::move( dx,  dy);
 }
 

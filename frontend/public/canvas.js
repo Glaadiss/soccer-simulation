@@ -36,7 +36,7 @@ function writeBall(x, y) {
   ctx.beginPath();
   ctx.strokeStyle = "#33aa33";
   ctx.fillStyle = "white";
-  ctx.arc(x, y, 10, 0, 2 * Math.PI);
+  ctx.arc(x, y, 5, 0, 2 * Math.PI);
   ctx.fill();
   ctx.closePath();
 }
@@ -47,7 +47,7 @@ function randomizeLocation() {
 function writePlayer(x, y, fill, id) {
   ctx.fillStyle = fill;
   ctx.beginPath();
-  ctx.arc(x, y, 20, 0, 2 * Math.PI);
+  ctx.arc(x, y, 10, 0, 2 * Math.PI);
   ctx.fill();
   ctx.font = "12px Arial";
   ctx.fillStyle = "yellow";
