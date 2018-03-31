@@ -33,7 +33,6 @@ function eraseField() {
 }
 
 function writeBall(x, y) {
-  ctx.strokeStyle = "black";
   ctx.fillStyle = "white";
   ctx.beginPath();
   ctx.arc(x, y, 10, 0, 2 * Math.PI);
@@ -49,17 +48,17 @@ function writePlayer(x, y, fill) {
   ctx.beginPath();
   ctx.arc(x, y, 20, 0, 2 * Math.PI);
   ctx.fill();
-  ctx.strokeStyle = "yellow";
-  const sightRadius = 40;
-  const angle = Math.random() * 360;
-  const secondAngle = angle > 180 ? angle - 20 : angle + 20;
-  firstX = Math.cos(angle) * sightRadius + x;
-  firstY = Math.sin(angle) * sightRadius + y;
-  secondX = Math.cos(secondAngle) * sightRadius + x;
-  secondY = Math.sin(secondAngle) * sightRadius + y;
-  writeLine(x, y, firstX, firstY);
-  writeLine(x, y, secondX, secondY);
-  writeLine(firstX, firstY, secondX, secondY);
+  // ctx.strokeStyle = "yellow";
+  // const sightRadius = 40;
+  // const angle = Math.random() * 360;
+  // const secondAngle = angle > 180 ? angle - 20 : angle + 20;
+  // firstX = Math.cos(angle) * sightRadius + x;
+  // firstY = Math.sin(angle) * sightRadius + y;
+  // secondX = Math.cos(secondAngle) * sightRadius + x;
+  // secondY = Math.sin(secondAngle) * sightRadius + y;
+  // writeLine(x, y, firstX, firstY);
+  // writeLine(x, y, secondX, secondY);
+  // writeLine(firstX, firstY, secondX, secondY);
 }
 
 const angle = Math.random() * 360;

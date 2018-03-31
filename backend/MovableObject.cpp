@@ -27,6 +27,13 @@ double MovableObject::getY(){
     return y;
 }
 
+double MovableObject::getDistance(MovableObject &other){
+    double xDiff = x - other.getX();
+    double yDiff = y - other.getY();
+    return sqrt(xDiff*xDiff + yDiff*yDiff);
+}
+
+
 bool MovableObject::isCollision(MovableObject &other){
     bool nearX = abs(other.getX() - x) < radius;
     bool nearY = abs(other.getY() - y) < radius;
@@ -36,4 +43,26 @@ bool MovableObject::isCollision(MovableObject &other){
 void MovableObject::move(double dx, double dy){
     x+=dx;
     y+=dy;
+}
+
+double MovableObject::fRand(double fMin, double fMax)
+{
+    double f = (double)rand() / RAND_MAX;
+    return fMin + f * (fMax - fMin);
+}
+
+double MovableObject::getVelocity() const {
+    return velocity;
+}
+
+int MovableObject::getId() const {
+    return id;
+}
+
+double MovableObject::getDx() const {
+    return dx;
+}
+
+double MovableObject::getDy() const {
+    return dy;
 }

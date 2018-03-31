@@ -15,7 +15,8 @@ class Bot : public MovableObject{
     Seesight seesight;
 public:
     Bot(int i, double d, double d1);
-    void move(Ball &ball);
+    void move(Ball &ball, Bot bots[]);
+    void setDirection(Ball &ball, bool ballClosest);
 };
 
 

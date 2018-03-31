@@ -19,6 +19,7 @@ public:
     Bot* locatePlayer(int id, double x, double y);
     void displayPlayers();
     void moveAll(Ball &ball);
+    Bot* findBallClosest(Ball &ball);
 };
 
 

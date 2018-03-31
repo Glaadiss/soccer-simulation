@@ -11,6 +11,7 @@
 #include "Team.h"
 #include "Goal.h"
 #include "Ball.h"
+
 class Playground {
     PointsTable pointsTable;
     TimeTable timeTable;
@@ -22,6 +23,7 @@ class Playground {
 public:
     Playground();
     void play();
+    void flush();
 };
 
 

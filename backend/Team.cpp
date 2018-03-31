@@ -4,6 +4,16 @@
 
 #include "Team.h"
 
+int indexofSmallestElement(double array[], int size)
+{
+    int index = 0;
+    for(int i = 1; i < size; i++)
+    {
+        if(array[i] < array[index])
+            index = i;
+    }
+    return index;
+}
 
 Bot* Team::locatePlayer(int idd, double xx, double y){
     double x = leftField ? xx : 100 - xx;
@@ -37,10 +47,20 @@ void Team::displayPlayers() {
 }
 
 void Team::moveAll(Ball &ball) {
-    for (auto &&item : players) {
-        item->move(ball);
+    Bot *closestPlayer= findBallClosest(ball);
+    for (auto &&player: players) {
+        player->setDirection(ball, player->getId() == closestPlayer->getId());
+        player->move(ball, *players);
     }
 }
 
+Bot* Team::findBallClosest(Ball &ball){
+    double tempMinArray[11];
+    for (int i = 0; i < 11; ++i) {
+        tempMinArray[i] = players[i]->getDistance(ball);
+    }
+    int index = indexofSmallestElement(tempMinArray, 11);
+    return players[index];
+}
 
 

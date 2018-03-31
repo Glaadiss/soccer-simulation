@@ -9,20 +9,29 @@
 #include <math.h>
 
 class MovableObject {
-    int id;
 
 protected:
     int radius;
     double velocity;
     double x;
     double y;
+    int id;
+    double dx;
+protected:
+    double dy;
 public:
     explicit MovableObject(int, double, double);
+    double getVelocity() const;
+    int getId() const;
+    double getDx() const;
+    double getDy() const;
     std::string getPosition();
     double getX();
     double getY();
     void move(double dx, double dy);
     bool isCollision(MovableObject &other);
+    static double fRand(double fMin, double fMax);
+    double getDistance(MovableObject &other);
 };
 
 

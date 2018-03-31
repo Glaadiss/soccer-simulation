@@ -13,6 +13,8 @@ Ball.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/Ball.h
 MovableObject.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/MovableObject.h
+algorithm
+-
 
 /Users/gladis/CLionProjects/soccer-simulation/backend/Bot.cpp
 Bot.h
@@ -106,5 +108,9 @@ iostream
 Playground.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/Playground.h
 unistd.h
+-
+stdlib.h
+-
+time.h
 -
 
