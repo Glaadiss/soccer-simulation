@@ -15,7 +15,7 @@ ctx.lineWidth = 2;
 // writeGame();
 
 function writeGame(json) {
-  writePitch();
+  // writePitch();
   for (let i = 0; i < 11; i++) {
     const { x, y } = json[i + 1];
     writePlayer(x * scaleX, y * scaleY, "red", i + 1);
