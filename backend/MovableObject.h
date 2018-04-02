@@ -11,7 +11,7 @@
 class MovableObject {
 
 protected:
-    int radius;
+    double radius;
     double velocity;
     double x;
     double y;
