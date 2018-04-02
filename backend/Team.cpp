@@ -52,7 +52,7 @@ void Team::moveAll(Ball &ball) {
     Bot *randomBot = players[rand() % 11];
     for (auto &&player: players) {
         player->setDirection(ball,
-                             player->getId() == closestPlayer->getId(),
+                             player == closestPlayer,
                              *randomBot,
                              botWithBall != nullptr);
         player->move(ball);
@@ -64,7 +64,8 @@ Bot * Team::getBotWithBall(Ball &ball){
     Bot * bot = nullptr;
     int i =0;
     while(i < 11 && bot == nullptr){
-        bot = players[i]->isCollision(ball) ? players[i] : nullptr;
+        bool cond = players[i]->isCollision(ball) || players[i]->getId() == ball.getKickedById();
+        bot =  cond ? players[i] : nullptr;
         ++i;
     }
     return bot;
@@ -78,5 +79,6 @@ Bot* Team::findBallClosest(Ball &ball){
     int index = indexofSmallestElement(tempMinArray, 11);
     return players[index];
 }
+
 
 

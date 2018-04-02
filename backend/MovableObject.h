@@ -36,6 +36,11 @@ public:
     bool isCollision(MovableObject &other);
     static double fRand(double fMin, double fMax);
     double getDistance(MovableObject &other);
+    double getDistance(double xx, double yy);
+    void approach(double xx, double yy);
+    bool operator==(MovableObject &other) const;
+    bool operator!=(MovableObject &other) const;
+
 };
 
 

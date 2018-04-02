@@ -14,29 +14,18 @@ void Bot::setDirection(Ball &ball, bool ballClosest, Bot randomBot, bool teamHas
 
     if(isCollision(ball)){
         double choice = MovableObject::fRand(0, 1);
-        if(choice >= 0 && choice < 0.4 && id != randomBot.getId()){
+        if(choice >= 0 && choice < 0.3 && id != randomBot.getId()){
             ball.kick(randomBot.getX(),randomBot.getY(), randomBot.getId());
         }
-        else if(choice >= 0.4 && choice < 1){
+        else if(choice >= 0.3 && choice < 1){
             attack();
             ball.moveWithPlayer(this);
         }
     }
     else if(ballClosest){
-        double ballX = ball.getX();
-        double ballY = ball.getY();
-        double diffX = ballX - x;
-        double diffY = ballY - y;
-        double distance = sqrt(diffX*diffX + diffY*diffY);
-        if(distance<0.1) return;
-        int signX = diffX > 0 ? 1 : -1;
-        int signY = diffY > 0 ? 1 : -1;
-        double angleX = diffX/distance;
-        double angleY = diffY/distance;
-        dx = signX * sqrt(velocity * velocity * angleX * angleX);
-        dy = signY * sqrt(velocity * velocity * angleY * angleY);
+        approach(ball.getX(), ball.getY());
     }
-   else if(teamHasBall) {
+    else if(teamHasBall) {
 
         int xFactor = origX > 50 ? -1 : 1;
         bool xCondition = abs(origX - x) < maxX;
@@ -56,23 +45,13 @@ void Bot::setDirection(Ball &ball, bool ballClosest, Bot randomBot, bool teamHas
 
     }
     else{
-        if(ball.getX() > x && x < origX + maxX){
-            dx = fRand(0.01, 0.05);
+        if(getDistance(origX, origY) > 3 ){
+            approach(origX, origY);
         }
-        else if(ball.getX() < x && x > origX - maxX){
-            dx = -fRand(0.01, 0.05);
-        }
-        else
-            dx = 0;
-
-        if(ball.getY() > y && y < origY +maxY){
-            dy = fRand(0.01, 0.05);
-        }
-        else if(ball.getY() < y && y > origY - maxY){
-            dy = -fRand(0.01, 0.05);
-        }
-        else
+        else{
+            dx =0;
             dy =0;
+        }
     }
 
 }
@@ -80,16 +59,7 @@ void Bot::setDirection(Ball &ball, bool ballClosest, Bot randomBot, bool teamHas
 void Bot::attack(){
     double xx = origX > 50 ? 15 : 85;
     double yy = fRand(20, 80);
-    double diffX = (xx - x);
-    double diffY = (yy -y);
-    double distance = sqrt(diffX*diffX + diffY*diffY);
-    if(distance<0.1) return;
-    int signX = diffX >= 0 ? 1 : -1;
-    int signY = diffY >= 0 ? 1 : -1;
-    double angleX = diffX/distance;
-    double angleY = diffY/distance;
-    dx = signX*sqrt(velocity * velocity * angleX * angleX);
-    dy = signY*sqrt(velocity * velocity * angleY * angleY);
+    approach(xx, yy);
 }
 
 

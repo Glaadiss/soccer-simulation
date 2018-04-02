@@ -43,6 +43,11 @@ double MovableObject::getDistance(MovableObject &other){
     return sqrt(xDiff*xDiff + yDiff*yDiff);
 }
 
+double MovableObject::getDistance(double xx, double yy){
+    double xDiff = x - xx;
+    double yDiff = y - yy;
+    return sqrt(xDiff*xDiff + yDiff*yDiff);
+}
 
 bool MovableObject::isCollision(MovableObject &other){
     bool nearX = abs(other.getX() - x) < radius;
@@ -75,4 +80,25 @@ double MovableObject::getDx() const {
 
 double MovableObject::getDy() const {
     return dy;
+}
+
+void MovableObject::approach(double xx, double yy){
+    double diffX = (xx - x);
+    double diffY = (yy -y);
+    double distance = sqrt(diffX*diffX + diffY*diffY);
+    if(distance<0.1) return;
+    int signX = diffX >= 0 ? 1 : -1;
+    int signY = diffY >= 0 ? 1 : -1;
+    double angleX = diffX/distance;
+    double angleY = diffY/distance;
+    dx = signX*sqrt(velocity * velocity * angleX * angleX);
+    dy = signY*sqrt(velocity * velocity * angleY * angleY);
+}
+
+bool MovableObject::operator==(MovableObject &other) const {
+    return getId() == other.getId();
+}
+
+bool MovableObject::operator!=(MovableObject &other) const {
+    return getId() != other.getId();
 }

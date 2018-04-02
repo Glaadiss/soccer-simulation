@@ -49,3 +49,7 @@ void Ball::moveWithPlayer(MovableObject *bot){
     dy =bot->getDy();
 }
 
+int Ball::getKickedById() const {
+    return kickedById;
+}
+
