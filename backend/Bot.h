@@ -25,6 +25,8 @@ public:
     Bot(int i, double d, double d1);
     void move(Ball &ball);
     void attack();
+    void setOffensiveTactic();
+    void playWithBall(Ball &ball, Bot friendFromTeam);
     void setDirection(Ball &ball, bool ballClosest, Bot bot, bool teamHasBall, bool shouldAttackBall);
 };
 

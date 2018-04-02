@@ -29,18 +29,8 @@ void Ball::move(){
 void Ball::kick(double xx, double yy, int id) {
     if(kickedById == id) return;
     kickedById = id;
-
     velocity = MovableObject::fRand(1, 1.5);
-    double diffX = (xx - x);
-    double diffY = (yy -y);
-    double distance = sqrt(diffX*diffX + diffY*diffY);
-    if(distance<0.1) return;
-    int signX = diffX >= 0 ? 1 : -1;
-    int signY = diffY >= 0 ? 1 : -1;
-    double angleX = diffX/distance;
-    double angleY = diffY/distance;
-    dx = signX*sqrt(velocity * velocity * angleX * angleX);
-    dy = signY*sqrt(velocity * velocity * angleY * angleY);
+    approach(xx, yy);
 }
 
 void Ball::moveWithPlayer(MovableObject *bot){
