@@ -61,6 +61,8 @@ Goal.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/Goal.h
 Ball.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/Ball.h
+vector
+-
 
 /Users/gladis/CLionProjects/soccer-simulation/backend/PointsTable.cpp
 PointsTable.h
@@ -95,6 +97,8 @@ iostream
 /Users/gladis/CLionProjects/soccer-simulation/backend/iostream
 Ball.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/Ball.h
+array
+-
 
 /Users/gladis/CLionProjects/soccer-simulation/backend/TimeTable.cpp
 TimeTable.h

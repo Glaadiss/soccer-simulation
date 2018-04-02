@@ -38,6 +38,7 @@ Team::Team(bool LeftField) {
 
     players[9] = locatePlayer(10, 40, 40);
     players[10] = locatePlayer(11, 40, 60);
+
 }
 
 void Team::displayPlayers() {
@@ -47,14 +48,15 @@ void Team::displayPlayers() {
 }
 
 void Team::moveAll(Ball &ball) {
-    Bot *closestPlayer= findBallClosest(ball);
     Bot *botWithBall = getBotWithBall(ball);
     Bot *randomBot = players[rand() % 11];
+    std::array<Bot *, 11> closestPlayers = getBallClosestArr(ball);
     for (auto &&player: players) {
         player->setDirection(ball,
-                             player == closestPlayer,
+                             player == closestPlayers[0],
                              *randomBot,
-                             botWithBall != nullptr);
+                             botWithBall != nullptr,
+                             player == closestPlayers[1] || player ==closestPlayers[2]);
         player->move(ball);
     }
 }
@@ -78,6 +80,19 @@ Bot* Team::findBallClosest(Ball &ball){
     }
     int index = indexofSmallestElement(tempMinArray, 11);
     return players[index];
+}
+
+std::array<Bot *, 11> Team::getBallClosestArr(Ball &ball) {
+    std::array<Bot *, 11> minArray;
+    for(int i = 0; i <11; i ++){
+        minArray[i] = players[i];
+    }
+
+    std::sort(minArray.begin(), minArray.end(), [&ball](Bot *a, Bot* b ){
+        return a->getDistance(ball) < b->getDistance(ball);
+    });
+
+    return minArray;
 }
 
 

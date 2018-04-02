@@ -25,7 +25,7 @@ public:
     Bot(int i, double d, double d1);
     void move(Ball &ball);
     void attack();
-    void setDirection(Ball &ball, bool ballClosest, Bot bot, bool teamHasBall);
+    void setDirection(Ball &ball, bool ballClosest, Bot bot, bool teamHasBall, bool shouldAttackBall);
 };
 
 

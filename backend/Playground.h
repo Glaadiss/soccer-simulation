@@ -11,6 +11,7 @@
 #include "Team.h"
 #include "Goal.h"
 #include "Ball.h"
+#include <vector>
 
 class Playground {
     PointsTable pointsTable;

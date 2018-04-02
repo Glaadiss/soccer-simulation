@@ -5,11 +5,11 @@
 #ifndef BACKEND_TEAM_H
 #define BACKEND_TEAM_H
 
-
 #include "Bot.h"
 #include "RealPlayer.h"
 #include "iostream"
 #include "Ball.h"
+#include <array>
 class Team {
     bool leftField;
     Bot *players[11];
@@ -20,7 +20,7 @@ public:
     void displayPlayers();
     void moveAll(Ball &ball);
     Bot* findBallClosest(Ball &ball);
-    Bot** getBallCosestArr(Ball &ball);
+    std::array<Bot *, 11> getBallClosestArr(Ball &ball);
     Bot* getBotWithBall(Ball &ball);
 };
 
