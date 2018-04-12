@@ -21,16 +21,11 @@ app.use(express.static(__dirname + "/public"));
 app.get("/", (req, res) => res.sendFile(__dirname + "/public/index.html"));
 
 function onConnection(socket) {
-  // socket.on('drawing', (data) => socket.broadcast.emit('drawing', data));
   console.log("a user connected");
   socket.on("disconnect", function() {
     console.log("user disconnected");
   });
 }
-
-// setInterval(() => {
-//   io.emit("event", { event: "something event" });
-// }, 500);
 
 io.on("connection", onConnection);
 

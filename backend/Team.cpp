@@ -73,15 +73,6 @@ Bot * Team::getBotWithBall(Ball &ball){
     return bot;
 }
 
-Bot* Team::findBallClosest(Ball &ball){
-    double tempMinArray[11];
-    for (int i = 0; i < 11; ++i) {
-        tempMinArray[i] = players[i]->getDistance(ball);
-    }
-    int index = indexofSmallestElement(tempMinArray, 11);
-    return players[index];
-}
-
 std::array<Bot *, 11> Team::getBallClosestArr(Ball &ball) {
     std::array<Bot *, 11> minArray;
     for(int i = 0; i <11; i ++){

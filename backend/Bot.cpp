@@ -13,7 +13,7 @@ Bot::Bot(int i, double d, double d1) : MovableObject(i, d, d1) {
 
 void Bot::playWithBall(Ball &ball, Bot friendFromTeam){
     double choice = MovableObject::fRand(0, 1);
-    if(choice >= 0 && choice < 0.3 && id != friendFromTeam.getId()){
+    if(choice < 0.3 && id != friendFromTeam.getId()){
         ball.kick(friendFromTeam.getX(),friendFromTeam.getY(), friendFromTeam.getId());
     }
     else if(choice >= 0.3 && choice < 1){
