@@ -19,7 +19,6 @@ protected:
     double origY;
     int id;
     double dx;
-protected:
     double dy;
 public:
     explicit MovableObject(int, double, double);
@@ -32,6 +31,7 @@ public:
     double getY() const;
     double getOrigX();
     double getOrigY();
+    void setPosition(double X, double Y);
     void move(double dx, double dy);
     bool isCollision(MovableObject &other);
     static double fRand(double fMin, double fMax);

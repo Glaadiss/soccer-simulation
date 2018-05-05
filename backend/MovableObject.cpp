@@ -102,3 +102,8 @@ bool MovableObject::operator==(MovableObject &other) const {
 bool MovableObject::operator!=(MovableObject &other) const {
     return getId() != other.getId();
 }
+
+void MovableObject::setPosition(double X, double Y){
+    x = X;
+    y = Y;
+}

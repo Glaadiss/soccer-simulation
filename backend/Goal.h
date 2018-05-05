@@ -4,10 +4,23 @@
 
 #ifndef BACKEND_GOAL_H
 #define BACKEND_GOAL_H
-
-
+#include "Ball.h"
 class Goal {
+public:
+    double getX() const;
 
+    double getYTop() const;
+
+    double getYBot() const;
+
+    Goal(double x1, double y1, double y2);
+
+    bool waitForBall(Ball &ball);
+
+private:
+    double x;
+    double yTop;
+    double yBot;
 };
 
 

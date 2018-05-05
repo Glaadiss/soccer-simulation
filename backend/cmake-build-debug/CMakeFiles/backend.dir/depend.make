@@ -11,8 +11,10 @@ CMakeFiles/backend.dir/Bot.cpp.o: ../Bot.h
 CMakeFiles/backend.dir/Bot.cpp.o: ../MovableObject.h
 CMakeFiles/backend.dir/Bot.cpp.o: ../Seesight.h
 
+CMakeFiles/backend.dir/Goal.cpp.o: ../Ball.h
 CMakeFiles/backend.dir/Goal.cpp.o: ../Goal.cpp
 CMakeFiles/backend.dir/Goal.cpp.o: ../Goal.h
+CMakeFiles/backend.dir/Goal.cpp.o: ../MovableObject.h
 
 CMakeFiles/backend.dir/MovableObject.cpp.o: ../MovableObject.cpp
 CMakeFiles/backend.dir/MovableObject.cpp.o: ../MovableObject.h

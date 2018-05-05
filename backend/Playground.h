@@ -14,17 +14,18 @@
 #include <vector>
 
 class Playground {
-    PointsTable pointsTable;
+    PointsTable *pointsTable;
     TimeTable timeTable;
     Ball *ball;
     Team *redTeam;
     Team *blueTeam;
-    Goal redGoal;
-    Goal blueGoal;
+    Goal *redGoal;
+    Goal *blueGoal;
 public:
     Playground();
     void play();
     void flush();
+    void setMovableObjects();
 };
 
 

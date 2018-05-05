@@ -12,8 +12,10 @@ CMakeFiles/backend.dir/Bot.cpp.o
  /Users/gladis/CLionProjects/soccer-simulation/backend/MovableObject.h
  /Users/gladis/CLionProjects/soccer-simulation/backend/Seesight.h
 CMakeFiles/backend.dir/Goal.cpp.o
+ /Users/gladis/CLionProjects/soccer-simulation/backend/Ball.h
  /Users/gladis/CLionProjects/soccer-simulation/backend/Goal.cpp
  /Users/gladis/CLionProjects/soccer-simulation/backend/Goal.h
+ /Users/gladis/CLionProjects/soccer-simulation/backend/MovableObject.h
 CMakeFiles/backend.dir/MovableObject.cpp.o
  /Users/gladis/CLionProjects/soccer-simulation/backend/MovableObject.cpp
  /Users/gladis/CLionProjects/soccer-simulation/backend/MovableObject.h

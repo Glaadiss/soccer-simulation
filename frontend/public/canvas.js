@@ -1,5 +1,8 @@
 var socket = io();
+let i = 0;
 socket.on("data", function(json) {
+  if(i === 0) console.log(json);
+  i++;
   eraseField();
   writeGame(json);
 });
