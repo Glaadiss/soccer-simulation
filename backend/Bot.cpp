@@ -8,17 +8,21 @@ Bot::Bot(int i, double d, double d1) : MovableObject(i, d, d1) {
     maxY = MovableObject::fRand(10, 20);
     radius = 1;
     velocity = MovableObject::fRand(0.2, 0.5);
+    enemyGoalX = d > 50 ? 0 : 100;
 }
 
 
 void Bot::playWithBall(Ball &ball, Bot friendFromTeam){
     double choice = MovableObject::fRand(0, 1);
-    if(choice < 0.3 && id != friendFromTeam.getId()){
+    if(choice < 0.2 && id != friendFromTeam.getId()){
         ball.kick(friendFromTeam.getX(),friendFromTeam.getY(), friendFromTeam.getId());
     }
-    else if(choice >= 0.3 && choice < 1){
+    else if(choice >= 0.2 && choice < 0.9){
         attack();
         ball.moveWithPlayer(this);
+    }
+    else if(abs(enemyGoalX - x) < 35 ){
+        ball.kick(enemyGoalX, MovableObject::fRand(45, 55), id);
     }
 }
 

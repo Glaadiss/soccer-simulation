@@ -22,7 +22,7 @@ std::string PointsTable::displayScores() {
     auto strRedScore = std::to_string(redScore);
     auto strBlueScore = std::to_string(blueScore);
     std::stringstream result;
-    result << "\"" << "scores:" << "\"" << ":{\"red\":" << strRedScore << ",\"blue\":" << strBlueScore << "}";
+    result << "\"" << "scores" << "\"" << ":{\"red\":" << strRedScore << ",\"blue\":" << strBlueScore << "}";
     return result.str();
 }
 

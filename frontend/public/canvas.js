@@ -1,8 +1,5 @@
 var socket = io();
-let i = 0;
 socket.on("data", function(json) {
-  if(i === 0) console.log(json);
-  i++;
   eraseField();
   writeGame(json);
 });
@@ -26,12 +23,20 @@ function writeGame(json) {
   }
   const { x, y } = json[23];
   writeBall(x * scaleX, y * scaleY);
+  const {scores: {red, blue}} = json;
+  writeScores(red, blue);
 }
 
 function eraseField() {
   ctx.clearRect(0, 0, width, height);
 }
 
+function writeScores(red, blue){
+  ctx.font = "30px Comic Sans MS";
+  ctx.fillStyle = "yellow";
+  ctx.textAlign = "center";
+  ctx.fillText(`Red ${red} : ${blue} Blue`, width/2, 40);
+}
 function writeBall(x, y) {
   ctx.beginPath();
   ctx.strokeStyle = "#33aa33";

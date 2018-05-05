@@ -14,7 +14,7 @@ Playground::Playground() {
 void Playground::setMovableObjects(){
     blueTeam = new Team(true);
     redTeam = new Team(false);
-    ball = new Ball(23, 40, 40);
+    ball = new Ball(23, 50, 50);
 }
 
 void Playground::play() {

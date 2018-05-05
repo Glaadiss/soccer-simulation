@@ -14,6 +14,7 @@ class Bot : public MovableObject{
     using MovableObject::MovableObject;
     double maxX;
     double maxY;
+    double enemyGoalX;
 public:
     double getMaxX() const;
 
