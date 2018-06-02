@@ -14,10 +14,10 @@ Bot::Bot(int i, double d, double d1) : MovableObject(i, d, d1) {
 
 void Bot::playWithBall(Ball &ball, Bot friendFromTeam){
     double choice = MovableObject::fRand(0, 1);
-    if(choice < 0.2 && id != friendFromTeam.getId()){
+    if(choice < 0.6 && id != friendFromTeam.getId()){
         ball.kick(friendFromTeam.getX(),friendFromTeam.getY(), friendFromTeam.getId());
     }
-    else if(choice >= 0.2 && choice < 0.9){
+    else if(choice >= 0.6 && choice < 0.9){
         attack();
         ball.moveWithPlayer(this);
     }
@@ -30,7 +30,7 @@ void Bot::setOffensiveTactic(){
     int xFactor = origX > 50 ? -1 : 1;
     bool xCondition = abs(origX - x) < maxX;
     if (xCondition) {
-        dx = xFactor * fRand(0.01, 0.05);
+        dx = xFactor * fRand(0.05, 0.1);
     }
     else
         dx= 0;
@@ -38,7 +38,7 @@ void Bot::setOffensiveTactic(){
     int yFactor = origY < 50 ? -1 : 1;
     bool yCondition = abs(origY - y) < maxY;
     if (yCondition) {
-        dy = yFactor * fRand(0.01, 0.05);
+        dy = yFactor * fRand(0.05, 0.1);
     }
     else
         dy= 0;

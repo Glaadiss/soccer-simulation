@@ -22,6 +22,8 @@ public:
     Bot* findBallClosest(Ball &ball);
     std::array<Bot *, 11> getBallClosestArr(Ball &ball);
     Bot* getBotWithBall(Ball &ball);
+
+    Bot *getAttacker(Ball &ball);
 };
 
 

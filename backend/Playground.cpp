@@ -6,15 +6,15 @@
 
 Playground::Playground() {
     setMovableObjects();
-    redGoal = new Goal(0, 30, 60);
-    blueGoal = new Goal(100, 30, 60);
+    redGoal = new Goal(3, 45, 55);
+    blueGoal = new Goal(97, 45, 55);
     pointsTable = new PointsTable();
 }
 
 void Playground::setMovableObjects(){
     blueTeam = new Team(true);
     redTeam = new Team(false);
-    ball = new Ball(23, 50, 50);
+    ball = new Ball(23, 50.0, 50.0);
 }
 
 void Playground::play() {
@@ -38,5 +38,5 @@ void Playground::flush() {
     redTeam->displayPlayers();
     std::cout << ball->getPosition();
     std::cout << ",";
-    std::cout << pointsTable->displayScores() << "}" << std::flush;
+    std::cout << pointsTable->displayScores() << "}" << std::endl;
 }

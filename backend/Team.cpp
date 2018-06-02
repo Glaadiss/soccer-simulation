@@ -3,7 +3,7 @@
 //
 
 #include "Team.h"
-
+#include "vector"
 int indexofSmallestElement(double array[], int size)
 {
     int index = 0;
@@ -49,18 +49,32 @@ void Team::displayPlayers() {
 
 void Team::moveAll(Ball &ball) {
     Bot *botWithBall = getBotWithBall(ball);
-    Bot *randomBot = players[rand() % 11];
+    Bot *attacker = getAttacker(ball);
+    Bot *randomBot = attacker != nullptr ? attacker : players[rand() % 11];
     std::array<Bot *, 11> closestPlayers = getBallClosestArr(ball);
     for (auto &&player: players) {
         player->setDirection(ball,
                              player == closestPlayers[0],
                              *randomBot,
                              botWithBall != nullptr,
-                             player == closestPlayers[1] || player ==closestPlayers[2]);
+                             player == closestPlayers[1]);
         player->move(ball);
     }
 }
 
+Bot * Team::getAttacker(Ball &ball){
+    std::vector<Bot *> attackers;
+    for (auto &&item : players) {
+        if(leftField && ball.getX() < item->getX() + 10 ){
+            attackers.push_back(item);
+        }
+        else if(!leftField && ball.getX() > item->getX() - 10 ){
+            attackers.push_back(item);
+        }
+    }
+    auto size = attackers.size();
+    return size > 0 ? attackers[rand() % size] : nullptr;
+}
 
 Bot * Team::getBotWithBall(Ball &ball){
     Bot * bot = nullptr;

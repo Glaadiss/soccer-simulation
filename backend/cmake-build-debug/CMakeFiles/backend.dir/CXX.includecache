@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -93,6 +93,8 @@ Seesight.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/Team.cpp
 Team.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/Team.h
+vector
+/Users/gladis/CLionProjects/soccer-simulation/backend/vector
 
 /Users/gladis/CLionProjects/soccer-simulation/backend/Team.h
 Bot.h
