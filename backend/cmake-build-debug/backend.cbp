@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/Attacker.cpp">
+			<Option target="backend"/>
+		</Unit>
+		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/Attacker.h">
+			<Option target="backend"/>
+		</Unit>
 		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/Ball.cpp">
 			<Option target="backend"/>
 		</Unit>
@@ -90,6 +96,12 @@
 			<Option target="backend"/>
 		</Unit>
 		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/Bot.h">
+			<Option target="backend"/>
+		</Unit>
+		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/Deffender.cpp">
+			<Option target="backend"/>
+		</Unit>
+		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/Deffender.h">
 			<Option target="backend"/>
 		</Unit>
 		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/Goal.cpp">

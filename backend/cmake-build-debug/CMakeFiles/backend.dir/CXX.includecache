@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/Users/gladis/CLionProjects/soccer-simulation/backend/Attacker.cpp
+Attacker.h
+/Users/gladis/CLionProjects/soccer-simulation/backend/Attacker.h
+
+/Users/gladis/CLionProjects/soccer-simulation/backend/Attacker.h
+Bot.h
+/Users/gladis/CLionProjects/soccer-simulation/backend/Bot.h
+
 /Users/gladis/CLionProjects/soccer-simulation/backend/Ball.cpp
 Ball.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/Ball.h
@@ -23,10 +31,16 @@ Bot.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/Bot.h
 MovableObject.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/MovableObject.h
-Seesight.h
-/Users/gladis/CLionProjects/soccer-simulation/backend/Seesight.h
 Ball.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/Ball.h
+
+/Users/gladis/CLionProjects/soccer-simulation/backend/Deffender.cpp
+Deffender.h
+/Users/gladis/CLionProjects/soccer-simulation/backend/Deffender.h
+
+/Users/gladis/CLionProjects/soccer-simulation/backend/Deffender.h
+Bot.h
+/Users/gladis/CLionProjects/soccer-simulation/backend/Bot.h
 
 /Users/gladis/CLionProjects/soccer-simulation/backend/Goal.cpp
 Goal.h
@@ -97,10 +111,10 @@ vector
 /Users/gladis/CLionProjects/soccer-simulation/backend/vector
 
 /Users/gladis/CLionProjects/soccer-simulation/backend/Team.h
-Bot.h
-/Users/gladis/CLionProjects/soccer-simulation/backend/Bot.h
-RealPlayer.h
-/Users/gladis/CLionProjects/soccer-simulation/backend/RealPlayer.h
+Attacker.h
+/Users/gladis/CLionProjects/soccer-simulation/backend/Attacker.h
+Deffender.h
+/Users/gladis/CLionProjects/soccer-simulation/backend/Deffender.h
 iostream
 /Users/gladis/CLionProjects/soccer-simulation/backend/iostream
 Ball.h

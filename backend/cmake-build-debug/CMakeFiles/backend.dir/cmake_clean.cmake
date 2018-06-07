@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/backend.dir/Bot.cpp.o"
   "CMakeFiles/backend.dir/RealPlayer.cpp.o"
   "CMakeFiles/backend.dir/Seesight.cpp.o"
+  "CMakeFiles/backend.dir/Attacker.cpp.o"
+  "CMakeFiles/backend.dir/Deffender.cpp.o"
   "backend.pdb"
   "backend"
 )

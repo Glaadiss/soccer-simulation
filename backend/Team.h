@@ -5,15 +5,14 @@
 #ifndef BACKEND_TEAM_H
 #define BACKEND_TEAM_H
 
-#include "Bot.h"
-#include "RealPlayer.h"
+#include "Attacker.h"
+#include "Deffender.h"
 #include "iostream"
 #include "Ball.h"
 #include <array>
 class Team {
     bool leftField;
     Bot *players[11];
-    RealPlayer *realPlayer;
 public:
     Team(bool);
     Bot* locatePlayer(int id, double x, double y);

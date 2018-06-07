@@ -84,7 +84,7 @@ double MovableObject::getDy() const {
 
 void MovableObject::approach(double xx, double yy){
     double diffX = (xx - x);
-    double diffY = (yy -y);
+    double diffY = (yy - y);
     double distance = sqrt(diffX*diffX + diffY*diffY);
     if(distance<0.1) return;
     int signX = diffX >= 0 ? 1 : -1;

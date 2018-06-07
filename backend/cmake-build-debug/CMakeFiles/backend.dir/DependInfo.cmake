@@ -4,8 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/gladis/CLionProjects/soccer-simulation/backend/Attacker.cpp" "/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles/backend.dir/Attacker.cpp.o"
   "/Users/gladis/CLionProjects/soccer-simulation/backend/Ball.cpp" "/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles/backend.dir/Ball.cpp.o"
   "/Users/gladis/CLionProjects/soccer-simulation/backend/Bot.cpp" "/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles/backend.dir/Bot.cpp.o"
+  "/Users/gladis/CLionProjects/soccer-simulation/backend/Deffender.cpp" "/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles/backend.dir/Deffender.cpp.o"
   "/Users/gladis/CLionProjects/soccer-simulation/backend/Goal.cpp" "/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles/backend.dir/Goal.cpp.o"
   "/Users/gladis/CLionProjects/soccer-simulation/backend/MovableObject.cpp" "/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles/backend.dir/MovableObject.cpp.o"
   "/Users/gladis/CLionProjects/soccer-simulation/backend/Playground.cpp" "/Users/gladis/CLionProjects/soccer-simulation/backend/cmake-build-debug/CMakeFiles/backend.dir/Playground.cpp.o"

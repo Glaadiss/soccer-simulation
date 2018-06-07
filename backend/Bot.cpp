@@ -11,37 +11,12 @@ Bot::Bot(int i, double d, double d1) : MovableObject(i, d, d1) {
     enemyGoalX = d > 50 ? 0 : 100;
 }
 
-
-void Bot::playWithBall(Ball &ball, Bot friendFromTeam){
-    double choice = MovableObject::fRand(0, 1);
-    if(choice < 0.6 && id != friendFromTeam.getId()){
-        ball.kick(friendFromTeam.getX(),friendFromTeam.getY(), friendFromTeam.getId());
-    }
-    else if(choice >= 0.6 && choice < 0.9){
-        attack();
-        ball.moveWithPlayer(this);
-    }
-    else if(abs(enemyGoalX - x) < 35 ){
-        ball.kick(enemyGoalX, MovableObject::fRand(45, 55), id);
-    }
+void Bot::setOffensiveTactic(){
+//
 }
 
-void Bot::setOffensiveTactic(){
-    int xFactor = origX > 50 ? -1 : 1;
-    bool xCondition = abs(origX - x) < maxX;
-    if (xCondition) {
-        dx = xFactor * fRand(0.05, 0.1);
-    }
-    else
-        dx= 0;
-
-    int yFactor = origY < 50 ? -1 : 1;
-    bool yCondition = abs(origY - y) < maxY;
-    if (yCondition) {
-        dy = yFactor * fRand(0.05, 0.1);
-    }
-    else
-        dy= 0;
+void Bot::playWithBall(Ball &ball, Bot friendFromTeam){
+//
 }
 
 void Bot::setDirection(Ball &ball, bool ballClosest, Bot friendFromTeam, bool teamHasBall, bool shouldAttackBall){
@@ -70,12 +45,6 @@ void Bot::setDirection(Ball &ball, bool ballClosest, Bot friendFromTeam, bool te
 
 }
 
-void Bot::attack(){
-    double xx = origX > 50 ? 15 : 85;
-    double yy = fRand(20, 80);
-    approach(xx, yy);
-}
-
 
 void Bot::move(Ball &ball){
     MovableObject::move(dx, dy);
@@ -87,4 +56,8 @@ double Bot::getMaxX() const {
 
 double Bot::getMaxY() const {
     return maxY;
+}
+
+void Bot::setPropabilityScopes(int idle, int pass, int attack) {
+
 }

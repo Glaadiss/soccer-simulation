@@ -3,6 +3,7 @@
 //
 
 #include "Team.h"
+
 #include "vector"
 int indexofSmallestElement(double array[], int size)
 {
@@ -17,7 +18,13 @@ int indexofSmallestElement(double array[], int size)
 
 Bot* Team::locatePlayer(int idd, double xx, double y){
     double x = leftField ? xx : 100 - xx;
-    Bot *player = new Bot(leftField ? idd : idd + 11, x, y);
+    Bot *player;
+    if(idd > 5) {
+        player = new Attacker(leftField ? idd : idd + 11, x, y);
+    }
+    else{
+        player = new Deffender(leftField ? idd : idd + 11, x, y);
+    }
     return player;
 }
 
