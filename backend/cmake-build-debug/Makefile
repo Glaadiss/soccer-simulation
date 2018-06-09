@@ -366,33 +366,6 @@ RealPlayer.cpp.s:
 	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/RealPlayer.cpp.s
 .PHONY : RealPlayer.cpp.s
 
-Seesight.o: Seesight.cpp.o
-
-.PHONY : Seesight.o
-
-# target to build an object file
-Seesight.cpp.o:
-	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Seesight.cpp.o
-.PHONY : Seesight.cpp.o
-
-Seesight.i: Seesight.cpp.i
-
-.PHONY : Seesight.i
-
-# target to preprocess a source file
-Seesight.cpp.i:
-	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Seesight.cpp.i
-.PHONY : Seesight.cpp.i
-
-Seesight.s: Seesight.cpp.s
-
-.PHONY : Seesight.s
-
-# target to generate assembly for a file
-Seesight.cpp.s:
-	$(MAKE) -f CMakeFiles/backend.dir/build.make CMakeFiles/backend.dir/Seesight.cpp.s
-.PHONY : Seesight.cpp.s
-
 Team.o: Team.cpp.o
 
 .PHONY : Team.o
@@ -510,9 +483,6 @@ help:
 	@echo "... RealPlayer.o"
 	@echo "... RealPlayer.i"
 	@echo "... RealPlayer.s"
-	@echo "... Seesight.o"
-	@echo "... Seesight.i"
-	@echo "... Seesight.s"
 	@echo "... Team.o"
 	@echo "... Team.i"
 	@echo "... Team.s"

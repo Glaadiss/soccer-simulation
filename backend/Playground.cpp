@@ -6,29 +6,22 @@
 
 Playground::Playground() {
     setMovableObjects();
-    redGoal = new Goal(3, 45, 55);
-    blueGoal = new Goal(97, 45, 55);
-    pointsTable = new PointsTable();
+    redGoal = std::make_unique<Goal>(3, 45, 55);
+    blueGoal = std::make_unique<Goal>(97, 45, 55);
+    pointsTable = std::make_unique<PointsTable>();
 }
 
 void Playground::setMovableObjects(){
-    blueTeam = new Team(true);
-    redTeam = new Team(false);
-    ball = new Ball(23, 50.0, 50.0);
+    blueTeam = std::make_unique<Team>(true);
+    redTeam = std::make_unique<Team>(false);
+    ball = std::make_unique<Ball>(23, 50.0, 50.0);
 }
 
 void Playground::play() {
     blueTeam->moveAll(*ball);
     redTeam->moveAll(*ball);
     ball->move();
-    if(redGoal->waitForBall(*ball)){
-        pointsTable->incrementBlueScore();
-        setMovableObjects();
-    }
-    if(blueGoal->waitForBall(*ball)){
-        pointsTable->incrementRedScore();
-        setMovableObjects();
-    }
+    checkGoals();
     flush();
 }
 
@@ -39,4 +32,16 @@ void Playground::flush() {
     std::cout << ball->getPosition();
     std::cout << ",";
     std::cout << pointsTable->displayScores() << "}" << std::endl;
+}
+
+void Playground::checkGoals() {
+    if(redGoal->waitForBall(*ball)){
+        pointsTable->incrementBlueScore();
+        setMovableObjects();
+
+    }
+    if(blueGoal->waitForBall(*ball)){
+        pointsTable->incrementRedScore();
+        setMovableObjects();
+    }
 }

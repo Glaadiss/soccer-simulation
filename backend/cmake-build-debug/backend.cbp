@@ -134,12 +134,6 @@
 		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/RealPlayer.h">
 			<Option target="backend"/>
 		</Unit>
-		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/Seesight.cpp">
-			<Option target="backend"/>
-		</Unit>
-		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/Seesight.h">
-			<Option target="backend"/>
-		</Unit>
 		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/Team.cpp">
 			<Option target="backend"/>
 		</Unit>

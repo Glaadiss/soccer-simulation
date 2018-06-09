@@ -12,20 +12,22 @@
 #include "Goal.h"
 #include "Ball.h"
 #include <vector>
+#include <memory>
+
 
 class Playground {
-    PointsTable *pointsTable;
-    TimeTable timeTable;
-    Ball *ball;
-    Team *redTeam;
-    Team *blueTeam;
-    Goal *redGoal;
-    Goal *blueGoal;
+    std::unique_ptr<PointsTable> pointsTable;
+    std::unique_ptr<Ball> ball;
+    std::unique_ptr<Team> redTeam;
+    std::unique_ptr<Team> blueTeam;
+    std::unique_ptr<Goal> redGoal;
+    std::unique_ptr<Goal> blueGoal;
 public:
     Playground();
     void play();
     void flush();
     void setMovableObjects();
+    void checkGoals();
 };
 
 

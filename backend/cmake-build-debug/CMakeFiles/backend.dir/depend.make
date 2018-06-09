@@ -49,9 +49,6 @@ CMakeFiles/backend.dir/RealPlayer.cpp.o: ../MovableObject.h
 CMakeFiles/backend.dir/RealPlayer.cpp.o: ../RealPlayer.cpp
 CMakeFiles/backend.dir/RealPlayer.cpp.o: ../RealPlayer.h
 
-CMakeFiles/backend.dir/Seesight.cpp.o: ../Seesight.cpp
-CMakeFiles/backend.dir/Seesight.cpp.o: ../Seesight.h
-
 CMakeFiles/backend.dir/Team.cpp.o: ../Attacker.h
 CMakeFiles/backend.dir/Team.cpp.o: ../Ball.h
 CMakeFiles/backend.dir/Team.cpp.o: ../Bot.h

@@ -25,7 +25,7 @@ public:
     void move(Ball &ball);
     virtual void setOffensiveTactic();
     void setPropabilityScopes(int idle, int pass, int attack);
-    virtual virtual void playWithBall(Ball &ball, Bot friendFromTeam);
+    virtual void playWithBall(Ball &ball, Bot friendFromTeam);
     void setDirection(Ball &ball, bool ballClosest, Bot bot, bool teamHasBall, bool shouldAttackBall);
 };
 
