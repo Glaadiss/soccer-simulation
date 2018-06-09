@@ -15,5 +15,6 @@ void Deffender::playWithBall(Ball &ball, Bot friendFromTeam){
 }
 
 void Deffender::setOffensiveTactic(){
-    approach(origX, origY);
+    if(abs(x - origX) + abs(y - origY) > 5)
+        approach(origX, origY);
 }

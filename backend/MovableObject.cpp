@@ -86,7 +86,7 @@ void MovableObject::approach(double xx, double yy){
     double diffX = (xx - x);
     double diffY = (yy - y);
     double distance = sqrt(diffX*diffX + diffY*diffY);
-    if(distance<0.1) return;
+    if(distance<1) return;
     int signX = diffX >= 0 ? 1 : -1;
     int signY = diffY >= 0 ? 1 : -1;
     double angleX = diffX/distance;
