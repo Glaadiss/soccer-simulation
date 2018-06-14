@@ -69,8 +69,6 @@ Playground.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/Playground.h
 PointsTable.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/PointsTable.h
-TimeTable.h
-/Users/gladis/CLionProjects/soccer-simulation/backend/TimeTable.h
 Team.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/Team.h
 Goal.h
@@ -92,14 +90,6 @@ string
 sstream
 -
 
-/Users/gladis/CLionProjects/soccer-simulation/backend/RealPlayer.cpp
-RealPlayer.h
-/Users/gladis/CLionProjects/soccer-simulation/backend/RealPlayer.h
-
-/Users/gladis/CLionProjects/soccer-simulation/backend/RealPlayer.h
-MovableObject.h
-/Users/gladis/CLionProjects/soccer-simulation/backend/MovableObject.h
-
 /Users/gladis/CLionProjects/soccer-simulation/backend/Team.cpp
 Team.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/Team.h
@@ -117,12 +107,6 @@ Ball.h
 /Users/gladis/CLionProjects/soccer-simulation/backend/Ball.h
 array
 -
-
-/Users/gladis/CLionProjects/soccer-simulation/backend/TimeTable.cpp
-TimeTable.h
-/Users/gladis/CLionProjects/soccer-simulation/backend/TimeTable.h
-
-/Users/gladis/CLionProjects/soccer-simulation/backend/TimeTable.h
 
 /Users/gladis/CLionProjects/soccer-simulation/backend/main.cpp
 iostream

@@ -128,22 +128,10 @@
 		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/PointsTable.h">
 			<Option target="backend"/>
 		</Unit>
-		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/RealPlayer.cpp">
-			<Option target="backend"/>
-		</Unit>
-		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/RealPlayer.h">
-			<Option target="backend"/>
-		</Unit>
 		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/Team.cpp">
 			<Option target="backend"/>
 		</Unit>
 		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/Team.h">
-			<Option target="backend"/>
-		</Unit>
-		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/TimeTable.cpp">
-			<Option target="backend"/>
-		</Unit>
-		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/TimeTable.h">
 			<Option target="backend"/>
 		</Unit>
 		<Unit filename="/Users/gladis/CLionProjects/soccer-simulation/backend/main.cpp">

@@ -15,16 +15,10 @@ protected:
     double maxX;
     double maxY;
     double enemyGoalX;
-    int idleChance;
-    int passChance;
-    int attackChance;
 public:
-    double getMaxX() const;
-    double getMaxY() const;
     Bot(int i, double d, double d1);
     void move(Ball &ball);
     virtual void setOffensiveTactic();
-    void setPropabilityScopes(int idle, int pass, int attack);
     virtual void playWithBall(Ball &ball, Bot friendFromTeam);
     void setDirection(Ball &ball, bool ballClosest, Bot bot, bool teamHasBall, bool shouldAttackBall);
 };

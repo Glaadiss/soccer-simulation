@@ -50,14 +50,3 @@ void Bot::move(Ball &ball){
     MovableObject::move(dx, dy);
 }
 
-double Bot::getMaxX() const {
-    return maxX;
-}
-
-double Bot::getMaxY() const {
-    return maxY;
-}
-
-void Bot::setPropabilityScopes(int idle, int pass, int attack) {
-
-}
